@@ -1,0 +1,9 @@
+$primarytextcolor:rgb(151, 9, 9);
+
+$mobilewidth:750px;
+
+@mixin mobile{
+    @media only screen and (max-width:#{$mobilewidth}){
+        @content
+    }
+}

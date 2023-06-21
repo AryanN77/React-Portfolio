@@ -1,0 +1,72 @@
+.contact {
+  background-color: white;
+  display: flex;
+}
+.contact .left {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFDB58;
+  border-radius: 50px;
+  transform: rotateZ(30deg);
+  overflow: hidden;
+}
+@media only screen and (max-width: 750px) {
+  .contact .left {
+    transform: rotateZ(0);
+  }
+}
+.contact .left img {
+  width: 80%;
+  height: 80%;
+  transform: rotateZ(-30deg);
+}
+@media only screen and (max-width: 750px) {
+  .contact .left img {
+    transform: rotateZ(0);
+    height: 200px;
+  }
+}
+.contact .right {
+  flex: 0.5;
+}
+.contact .right .rightcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (max-width: 750px) {
+  .contact .right .rightcontainer h1 {
+    font-size: 15px;
+  }
+}
+.contact .right .rightcontainer .itemcontact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+  width: 200px;
+}
+.contact .right .rightcontainer .itemcontact img {
+  width: 60px;
+  margin-right: 15px;
+}
+@media only screen and (max-width: 750px) {
+  .contact .right .rightcontainer .itemcontact img {
+    width: 30px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .contact .right .rightcontainer .itemcontact h3 {
+    font-size: 15px;
+  }
+}
+.contact .right .rightcontainer .itemcontact h3 a {
+  text-decoration: none;
+  color: crimson;
+}
+.contact .right .rightcontainer .itemcontact h3 a:hover {
+  font-size: 1.1em;
+  font-weight: 900;
+}/*# sourceMappingURL=contact.css.map */

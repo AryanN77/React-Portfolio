@@ -1,0 +1,69 @@
+@import "../global.scss";
+
+
+.contact{
+    background-color: white;
+    display: flex;
+    .left{ 
+        flex:0.5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFDB58;
+        border-radius: 50px;
+        transform: rotateZ(30deg);
+        overflow: hidden;
+        @include mobile{
+            transform: rotateZ(0);
+        }
+        img{
+            width:80% ;
+            height: 80%;
+        transform: rotateZ(-30deg);
+        @include mobile{
+            transform: rotateZ(0);
+            height: 200px;
+        }
+        }
+    }
+    .right{
+        flex:0.5;
+        .rightcontainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1{
+                @include mobile{
+                    font-size: 15px;
+                }
+            }
+            .itemcontact{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin:15px 0;
+                width: 200px;
+                img{
+                    width: 60px;
+                    margin-right: 15px;
+                    @include mobile{
+                        width: 30px;
+                    }
+                }
+                h3{
+                    @include mobile{
+                        font-size: 15px;
+                    }
+                    a{
+                        text-decoration: none;
+                        color:crimson;
+                        &:hover{
+                            font-size: 1.1em ;
+                            font-weight: 900;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

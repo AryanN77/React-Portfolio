@@ -1,0 +1,12 @@
+.portfoliolist {
+  font-size: 13px;
+  margin: 0 12px;
+  padding: 7px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+.portfoliolist.active {
+  color: white;
+  background-color: rgb(151, 9, 9);
+}/*# sourceMappingURL=portfoliolist.css.map */

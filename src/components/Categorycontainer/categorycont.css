@@ -1,0 +1,23 @@
+.item {
+  width: 220px;
+  height: 150px;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  margin: 15px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: 0.2s all ease-in;
+}
+.item img {
+  width: 70px;
+  z-index: 9;
+}
+.item:hover {
+  background-color: rgb(107, 78, 78);
+}
+.item:hover img {
+  opacity: 0.3;
+  z-index: 0;
+}/*# sourceMappingURL=categorycont.css.map */
